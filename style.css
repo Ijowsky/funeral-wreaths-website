@@ -278,17 +278,17 @@ body {
 .product-image {
   overflow: hidden;
   background: #f8f9fa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-  min-height: 200px;
+  display: block;
+  padding: 0;
+  width: 100%;
 }
 
 .product-image img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+  display: block !important;
+  object-fit: none !important;
   border-radius: 4px;
   transition: transform 0.3s ease;
 }
@@ -840,7 +840,6 @@ select option {
   }
 
   .product-image {
-    height: 250px;
   }
 }
 
@@ -866,6 +865,5 @@ select option {
   }
 
   .product-image {
-    height: 220px;
   }
 }
