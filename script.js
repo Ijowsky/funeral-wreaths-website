@@ -1,8 +1,8 @@
 const featuredWreaths = [
   {
     id: 1,
-    name: "Венок-сердце с белыми розами",
-    price: 4500,
+    name: "КР - 11(50*20)",
+    price: 10,
     image: "images/photovenok1.jpg",
     category: "Элитные",
     rating: 5,
@@ -10,8 +10,8 @@ const featuredWreaths = [
   },
   {
     id: 2,
-    name: "Венок с серебряной лентой",
-    price: 3800,
+    name: "КР - 12(95*55)",
+    price: 30,
     image: "images/venok10.jpg",
     category: "Классические",
     rating: 5,
@@ -19,8 +19,8 @@ const featuredWreaths = [
   },
   {
     id: 3,
-    name: "Венок с ирисами и розами",
-    price: 4200,
+    name: "КР - 9/1(100*35)",
+    price: 30,
     image: "images/venok11.jpg",
     category: "Элитные",
     rating: 5,
@@ -28,8 +28,8 @@ const featuredWreaths = [
   },
   {
     id: 4,
-    name: "Венок с фиолетовыми гвоздиками",
-    price: 4000,
+    name: "КР - 10/1(100*60)",
+    price: 28,
     image: "images/venok12.jpg",
     category: "Элитные",
     rating: 5,
@@ -37,8 +37,8 @@ const featuredWreaths = [
   },
   {
     id: 5,
-    name: "Венок-сердце с черной лентой",
-    price: 5200,
+    name: "КР - 9(100*35)",
+    price: 20,
     image: "images/venok13.jpg",
     category: "Элитные",
     rating: 5,
@@ -46,16 +46,14 @@ const featuredWreaths = [
   },
   {
     id: 6,
-    name: "Венок-сердце с красными розами",
-    price: 5500,
+    name: "КР - 8(100*60)",
+    price: 30,
     image: "images/venok14.jpg",
     category: "Элитные",
     rating: 5,
     description: "Роскошный венок-сердце с красными розами и белыми цветами в красном обрамлении",
   },
 ]
-
-
 
 // Генерация звезд для рейтинга
 function generateStars(rating) {
@@ -82,7 +80,7 @@ function renderProductCard(wreath) {
           ${generateStars(wreath.rating)}
           <span>(${wreath.rating})</span>
         </div>
-        <div class="product-price">${wreath.price} ₽</div>
+        <div class="product-price">${wreath.price} BYN</div>
       </div>
     </div>
   `
