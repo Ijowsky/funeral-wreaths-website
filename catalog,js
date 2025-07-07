@@ -1,4 +1,4 @@
-// Полный каталог венков
+
 const wreaths = [
   {
     id: 1,
@@ -325,4 +325,3 @@ function resetFilters() {
   filterWreaths()
   console.log("🔄 Фильтры сброшены")
 }
-
