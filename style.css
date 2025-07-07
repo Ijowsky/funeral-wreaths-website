@@ -281,13 +281,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
-  height: 220px;
+  padding: 15px;
+  height: 280px;
 }
 
 .product-image img {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 100%;
+  max-height: 100%;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -846,7 +846,8 @@ select option {
   }
 
   .product-image {
-    height: 250px;
+    height: 300px;
+    padding: 10px;
   }
 }
 
@@ -872,6 +873,7 @@ select option {
   }
 
   .product-image {
-    height: 220px;
+    height: 280px;
+    padding: 10px;
   }
 }
