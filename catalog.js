@@ -3,7 +3,7 @@ const wreaths = [
   {
     id: 1,
     name: "КР - 11(50*20)",
-    price: 10 BYN,
+    price: 10,
     image: "images/photovenok1.jpg",
     category: "Элитные",
     rating: 5,
@@ -12,7 +12,7 @@ const wreaths = [
   {
     id: 2,
     name: "КР - 12(95*55)",
-    price: 30 BYN,
+    price: 30,
     image: "images/venok2.jpg",
     category: "Классические",
     rating: 5,
@@ -21,7 +21,7 @@ const wreaths = [
   {
     id: 3,
     name: "КР - 9/1(100*35)",
-    price: 30 BYN,
+    price: 30,
     image: "images/venok3.jpg",
     category: "Элитные",
     rating: 5,
@@ -30,7 +30,7 @@ const wreaths = [
   {
     id: 4,
     name: "КР - 10/1(100*60)",
-    price: 2800,
+    price: 28,
     image: "images/venok4.jpg",
     category: "Традиционные",
     rating: 4,
@@ -191,7 +191,7 @@ const wreaths = [
   },
   {
     id: 22,
-    name: "ВР - 3/6)150*75)",
+    name: "ВР - 3/6(150*75)",
     price: 70,
     image: "images/venok22.jpg",
     category: "Элитные",
@@ -317,7 +317,7 @@ const wreaths = [
   },
   {
     id: 36,
-    name: "ВР - 3/2(150*750",
+    name: "ВР - 3/2(150*75)",
     price: 70,
     image: "images/venok37.jpg",
     category: "Элитные",
@@ -333,7 +333,7 @@ const wreaths = [
     rating: 5,
     description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
   },
-   {
+  {
     id: 38,
     name: "ВР - 1(130*80)",
     price: 35,
@@ -342,7 +342,7 @@ const wreaths = [
     rating: 5,
     description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
   },
-   {
+  {
     id: 39,
     name: "ВР - 6/1(130*65)",
     price: 30,
@@ -351,7 +351,7 @@ const wreaths = [
     rating: 5,
     description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
   },
-   {
+  {
     id: 40,
     name: "ВР - 8(110*55)",
     price: 20,
@@ -360,7 +360,7 @@ const wreaths = [
     rating: 5,
     description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
   },
-   {
+  {
     id: 41,
     name: "КР - 14(75*35)",
     price: 10,
@@ -369,7 +369,7 @@ const wreaths = [
     rating: 5,
     description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
   },
-   {
+  {
     id: 42,
     name: "ВР - 7/1(130*65)",
     price: 25,
@@ -378,7 +378,7 @@ const wreaths = [
     rating: 5,
     description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
   },
-   {
+  {
     id: 43,
     name: "ВР - 2/1(140*70)",
     price: 30,
@@ -387,7 +387,7 @@ const wreaths = [
     rating: 5,
     description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
   },
-   {
+  {
     id: 44,
     name: "КР - 13(120*50)",
     price: 35,
@@ -433,7 +433,7 @@ function renderProductCard(wreath) {
           ${generateStars(wreath.rating)}
           <span>(${wreath.rating})</span>
         </div>
-        <div class="product-price">${wreath.price} ₽</div>
+        <div class="product-price">${wreath.price} BYN</div>
       </div>
     </div>
   `
@@ -455,24 +455,43 @@ document.addEventListener("DOMContentLoaded", () => {
   if (priceFilter) priceFilter.addEventListener("change", filterWreaths)
 })
 
-// Функция фильтрации венков
+// Улучшенная функция фильтрации венков для кодов КР/ВР
 function filterWreaths() {
-  const searchTerm = searchInput ? searchInput.value.toLowerCase() : ""
+  const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : ""
   const selectedCategory = categoryFilter ? categoryFilter.value : "all"
   const selectedPriceRange = priceFilter ? priceFilter.value : "all"
 
   filteredWreaths = wreaths.filter((wreath) => {
+    // Улучшенный поиск по кодам венков
     const matchesSearch =
-      wreath.name.toLowerCase().includes(searchTerm) || wreath.description.toLowerCase().includes(searchTerm)
+      searchTerm === "" ||
+      wreath.name.toLowerCase().includes(searchTerm) ||
+      wreath.description.toLowerCase().includes(searchTerm) ||
+      // Поиск по коду венка (КР, ВР)
+      (searchTerm.includes("кр") && wreath.name.toLowerCase().includes("кр")) ||
+      (searchTerm.includes("вр") && wreath.name.toLowerCase().includes("вр")) ||
+      // Поиск по номеру венка
+      searchTerm
+        .split(/[\s\-/$$$$]+/)
+        .some(
+          (part) =>
+            part.length > 0 &&
+            (wreath.name.toLowerCase().includes(part) ||
+              wreath.name
+                .replace(/[\s\-/$$$$]/g, "")
+                .toLowerCase()
+                .includes(part)),
+        )
+
     const matchesCategory = selectedCategory === "all" || wreath.category === selectedCategory
 
     let matchesPrice = true
     if (selectedPriceRange === "low") {
-      matchesPrice = wreath.price < 3000
+      matchesPrice = wreath.price < 30 // До 30 BYN
     } else if (selectedPriceRange === "medium") {
-      matchesPrice = wreath.price >= 3000 && wreath.price < 5000
+      matchesPrice = wreath.price >= 30 && wreath.price < 50 // 30 - 50 BYN
     } else if (selectedPriceRange === "high") {
-      matchesPrice = wreath.price >= 5000
+      matchesPrice = wreath.price >= 50 // От 50 BYN
     }
 
     return matchesSearch && matchesCategory && matchesPrice
@@ -481,7 +500,7 @@ function filterWreaths() {
   renderWreaths(filteredWreaths)
   updateResultsCount()
 
-  console.log(`🔍 Фильтрация: найдено ${filteredWreaths.length} венков`)
+  console.log(`🔍 Фильтрация: найдено ${filteredWreaths.length} венков по запросу "${searchTerm}"`)
 }
 
 // Функция рендеринга венков
