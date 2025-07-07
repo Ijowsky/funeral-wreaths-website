@@ -860,3 +860,32 @@ select option {
     font-size: 2rem;
   }
 }
+.delivery-info {
+    margin-top: 1rem;
+}
+
+.delivery-info strong {
+    color: #f59e0b;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.delivery-info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.delivery-info li {
+    color: #a1a1aa;
+    margin-bottom: 0.25rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.delivery-info li::before {
+    content: "✓";
+    color: #f59e0b;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
