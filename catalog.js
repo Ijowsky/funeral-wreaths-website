@@ -3,7 +3,7 @@ const wreaths = [
   {
     id: 1,
     name: "КР - 11(50*20)",
-    price: 10,
+    price: 10 BYN,
     image: "images/photovenok1.jpg",
     category: "Элитные",
     rating: 5,
@@ -12,7 +12,7 @@ const wreaths = [
   {
     id: 2,
     name: "КР - 12(95*55)",
-    price: 30,
+    price: 30 BYN,
     image: "images/venok2.jpg",
     category: "Классические",
     rating: 5,
@@ -21,7 +21,7 @@ const wreaths = [
   {
     id: 3,
     name: "КР - 9/1(100*35)",
-    price: 30,
+    price: 30 BYN,
     image: "images/venok3.jpg",
     category: "Элитные",
     rating: 5,
