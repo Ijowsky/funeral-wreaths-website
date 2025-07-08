@@ -6,7 +6,7 @@ const featuredWreaths = [
     image: "images/photovenok1.jpg",
     category: "Эконом",
     rating: 5,
-    description: "Изысканный венок в форме сердца из белых роз с зеленой атласной лентой",
+    description: "",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const featuredWreaths = [
     image: "images/venok10.jpg",
     category: "Стандарт",
     rating: 5,
-    description: "Торжественный венок с красными розами, белыми цветами и серебряной лентой",
+    description: "",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const featuredWreaths = [
     image: "images/venok11.jpg",
     category: "Стандарт",
     rating: 5,
-    description: "Элегантный венок с белыми розами и фиолетовыми ирисами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const featuredWreaths = [
     image: "images/venok12.jpg",
     category: "Стандарт",
     rating: 5,
-    description: "Роскошный венок с фиолетовыми гвоздиками и белыми лилиями",
+    description: "",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const featuredWreaths = [
     image: "images/venok13.jpg",
     category: "Эконом",
     rating: 5,
-    description: "Траурный венок в форме сердца с красными гвоздиками и черной лентой",
+    description: "",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const featuredWreaths = [
     image: "images/venok14.jpg",
     category: "Стандарт",
     rating: 5,
-    description: "Роскошный венок-сердце с красными розами и белыми цветами в красном обрамлении",
+    description: "",
   },
 ]
 
