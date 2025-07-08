@@ -7,7 +7,7 @@ const wreaths = [
     image: "images/photovenok1.jpg",
     category: "Эконом",
     rating: 5,
-    description: "Изысканный венок в форме сердца из белых роз с зеленой атласной лентой",
+    description: "",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const wreaths = [
     image: "images/venok2.jpg",
     category: "Стандарт",
     rating: 5,
-    description: "Торжественный венок с красными розами, белыми цветами и серебряной лентой",
+    description: "",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const wreaths = [
     image: "images/venok3.jpg",
     category: "Стандарт",
     rating: 5,
-    description: "Элегантный венок с белыми розами и фиолетовыми ирисами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const wreaths = [
     image: "images/venok4.jpg",
     category: "Стандарт",
     rating: 4,
-    description: "Классический венок с синими гвоздиками и белой лентой",
+    description: "",
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ const wreaths = [
     image: "images/venok5.jpg",
     category: "Эконом",
     rating: 5,
-    description: "Яркий венок с красными розами, белыми хризантемами и красной лентой",
+    description: "",
   },
   {
     id: 6,
@@ -52,7 +52,7 @@ const wreaths = [
     image: "images/venok65.jpg",
     category: "Стандарт",
     rating: 4,
-    description: "Солнечный венок с желтыми и красными цветами в красном обрамлении",
+    description: "",
   },
   {
     id: 7,
@@ -61,7 +61,7 @@ const wreaths = [
     image: "images/venok7.jpg",
     category: "Эконом",
     rating: 5,
-    description: "Роскошный венок с фиолетовыми гвоздиками и белыми лилиями",
+    description: "",
   },
   {
     id: 8,
@@ -70,7 +70,7 @@ const wreaths = [
     image: "images/venok8.jpg",
     category: "Стандарт",
     rating: 5,
-    description: "Траурный венок в форме сердца с красными гвоздиками и черной лентой",
+    description: "",
   },
   {
     id: 9,
@@ -79,7 +79,7 @@ const wreaths = [
     image: "images/venok9.jpg",
     category: "Эконом",
     rating: 5,
-    description: "Классический венок-сердце с белыми розами и красными гвоздиками",
+    description: "",
   },
   {
     id: 10,
@@ -88,7 +88,7 @@ const wreaths = [
     image: "images/venok10.jpg",
     category: "Премиум",
     rating: 5,
-    description: "Роскошный венок-сердце с красными розами и белыми цветами в красном обрамлении",
+    description: "",
   },
   {
     id: 11,
@@ -97,7 +97,7 @@ const wreaths = [
     image: "images/venok11.jpg",
     category: "Стандарт",
     rating: 5,
-    description: "Элегантный венок с белыми лилиями и зеленой листвой",
+    description: "",
   },
   {
     id: 12,
@@ -106,7 +106,7 @@ const wreaths = [
     image: "images/venok12.jpg",
     category: "Эконом",
     rating: 5,
-    description: "Нежный венок-сердце с белыми гвоздиками в красном обрамлении",
+    description: "",
   },
   {
     id: 13,
@@ -115,7 +115,7 @@ const wreaths = [
     image: "images/venok13.jpg",
     category: "Премиум",
     rating: 5,
-    description: "Элегантный овальный венок с белыми хризантемами и красными цветами в бордовом обрамлении",
+    description: "",
   },
   {
     id: 14,
@@ -124,7 +124,7 @@ const wreaths = [
     image: "images/venok14.jpg",
     category: "Эконом",
     rating: 5,
-    description: "Яркий овальный венок с желтыми и красными гвоздиками в красном атласном обрамлении",
+    description: "",
   },
   {
     id: 15,
@@ -133,7 +133,7 @@ const wreaths = [
     image: "images/venok15.jpg",
     category: "Элит",
     rating: 5,
-    description: "Роскошный овальный венок с красными гвоздиками и белыми лилиями в золотом обрамлении",
+    description: "",
   },
   {
     id: 16,
@@ -142,7 +142,7 @@ const wreaths = [
     image: "images/venok16.jpg",
     category: "Стандарт",
     rating: 5,
-    description: "Изысканный овальный венок с красными розами и белыми гвоздиками в золотом обрамлении",
+    description: "",
   },
   {
     id: 17,
@@ -151,7 +151,7 @@ const wreaths = [
     image: "images/venok17.jpg",
     category: "Стандарт",
     rating: 5,
-    description: "Премиальный овальный венок с множеством красных роз и белыми цветами в золотом обрамлении",
+    description: "",
   },
   {
     id: 18,
@@ -160,7 +160,7 @@ const wreaths = [
     image: "images/venok18.jpg",
     category: "Элит",
     rating: 5,
-    description: "Роскошный овальный венок с желтыми розами и белыми каллами в золотом обрамлении",
+    description: "",
   },
   {
     id: 19,
@@ -169,7 +169,7 @@ const wreaths = [
     image: "images/venok19.jpg",
     category: "Элит",
     rating: 5,
-    description: "Свежий овальный венок с белыми и желтыми цветами в зеленом атласном обрамлении",
+    description: "",
   },
   {
     id: 20,
@@ -178,7 +178,7 @@ const wreaths = [
     image: "images/venok20.jpg",
     category: "Премиум",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 21,
@@ -187,7 +187,7 @@ const wreaths = [
     image: "images/venok21.jpg",
     category: "Элит",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 22,
@@ -196,7 +196,7 @@ const wreaths = [
     image: "images/venok22.jpg",
     category: "Элит",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 23,
@@ -205,7 +205,7 @@ const wreaths = [
     image: "images/venok23.jpg",
     category: "Премиум",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 24,
@@ -214,7 +214,7 @@ const wreaths = [
     image: "images/venok24.jpg",
     category: "Премиум",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 25,
@@ -223,7 +223,7 @@ const wreaths = [
     image: "images/venok25.jpg",
     category: "Стандарт",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 26,
@@ -232,7 +232,7 @@ const wreaths = [
     image: "images/venok26.jpg",
     category: "Эконом",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 27,
@@ -241,7 +241,7 @@ const wreaths = [
     image: "images/venok27.jpg",
     category: "Стандарт",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 28,
@@ -250,7 +250,7 @@ const wreaths = [
     image: "images/venok28.jpg",
     category: "Премиум",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 29,
@@ -259,7 +259,7 @@ const wreaths = [
     image: "images/venok29.jpg",
     category: "Стандарт",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 30,
@@ -268,7 +268,7 @@ const wreaths = [
     image: "images/venok31.jpg",
     category: "Стандарт",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 31,
@@ -277,7 +277,7 @@ const wreaths = [
     image: "images/venok32.jpg",
     category: "Эконом",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 32,
@@ -286,7 +286,7 @@ const wreaths = [
     image: "images/venok33.jpg",
     category: "Эконом",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 33,
@@ -295,7 +295,7 @@ const wreaths = [
     image: "images/venok34.jpg",
     category: "Элит",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 34,
@@ -304,7 +304,7 @@ const wreaths = [
     image: "images/venok35.jpg",
     category: "Элит",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 35,
@@ -313,7 +313,7 @@ const wreaths = [
     image: "images/venok36.jpg",
     category: "Элит",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 36,
@@ -322,7 +322,7 @@ const wreaths = [
     image: "images/venok37.jpg",
     category: "Элит",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 37,
@@ -331,7 +331,7 @@ const wreaths = [
     image: "images/venok38.jpg",
     category: "Премиум",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 38,
@@ -340,7 +340,7 @@ const wreaths = [
     image: "images/venok39.jpg",
     category: "Стандарт",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 39,
@@ -349,7 +349,7 @@ const wreaths = [
     image: "images/venok530.jpg",
     category: "Стандарт",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 40,
@@ -358,7 +358,7 @@ const wreaths = [
     image: "images/venok1111.jpg",
     category: "Эконом",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 41,
@@ -367,7 +367,7 @@ const wreaths = [
     image: "images/venok2222.jpg",
     category: "Эконом",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 42,
@@ -376,7 +376,7 @@ const wreaths = [
     image: "images/venok3333.jpg",
     category: "Стандарт",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 43,
@@ -385,7 +385,7 @@ const wreaths = [
     image: "images/venok4444.jpg",
     category: "Стандарт",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
   {
     id: 44,
@@ -394,7 +394,7 @@ const wreaths = [
     image: "images/venok5555.jpg",
     category: "Стандарт",
     rating: 5,
-    description: "Стильный овальный венок с розовыми и желтыми розами в серебряном обрамлении",
+    description: "",
   },
 ]
 
